@@ -171,8 +171,7 @@ def main():
                 return
             if event.type == pg.KEYDOWN and event.key == pg.K_SPACE:
                 # スペースキー押下でBeamクラスのインスタンス生成
-                beam = Beam(bird)            
-        screen.blit(bg_img, [0, 0])
+                beam = Beam(bird) 
         
         for bomb in bombs:
             if bird.rct.colliderect(bomb.rct):
